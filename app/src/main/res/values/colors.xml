@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Modern Calculator Palette -->
+    <color name="bg_color">#F7F8FA</color>
+    <color name="display_bg">#FFFFFF</color>
+    <color name="text_primary">#2D2E33</color>
+    <color name="text_secondary">#7C7D82</color>
+
+    <!-- Darkened number buttons for better visibility -->
+    <color name="btn_number">#EBECEF</color>
+    <color name="btn_number_text">#1A1B1E</color>
+
+    <color name="btn_operator">#E9F0FF</color>
+    <color name="btn_operator_text">#4B89FF</color>
+
+    <color name="btn_clear">#FFF0F0</color>
+    <color name="btn_clear_text">#FF5C5C</color>
+
+    <color name="btn_equal">#4B89FF</color>
+    <color name="btn_equal_text">#FFFFFF</color>
+</resources>

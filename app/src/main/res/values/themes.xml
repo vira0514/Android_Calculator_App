@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CalculatorApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+
+    <style name="Theme.CalculatorApp" parent="Base.Theme.CalculatorApp" />
+
+    <!-- Base Button Style -->
+    <style name="CalcButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/btn_number</item>
+        <item name="android:textColor">@color/btn_number_text</item>
+    </style>
+
+    <!-- Operator Button Style -->
+    <style name="OperatorButton" parent="CalcButton">
+        <item name="backgroundTint">@color/btn_operator</item>
+        <item name="android:textColor">@color/btn_operator_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Clear Button Style -->
+    <style name="ClearButton" parent="CalcButton">
+        <item name="backgroundTint">@color/btn_clear</item>
+        <item name="android:textColor">@color/btn_clear_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Equal Button Style -->
+    <style name="EqualButton" parent="CalcButton">
+        <item name="backgroundTint">@color/btn_equal</item>
+        <item name="android:textColor">@color/btn_equal_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

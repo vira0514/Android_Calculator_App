@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFormula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|end"
+        android:paddingHorizontal="20dp"
+        android:text=""
+        android:textColor="@color/text_secondary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="top|end"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="24dp"
+        android:text="@string/zero"
+        android:textColor="@color/text_primary"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFormula" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:columnCount="4"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnClear" android:text="@string/clear" style="@style/ClearButton"/>
+        <Button android:id="@+id/btnDiv" android:text="@string/div" style="@style/OperatorButton"/>
+        <Button android:id="@+id/btnMul" android:text="@string/mul" style="@style/OperatorButton"/>
+        <Button android:id="@+id/btnSub" android:text="@string/sub" style="@style/OperatorButton"/>
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btn7" android:text="@string/seven" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn8" android:text="@string/eight" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn9" android:text="@string/nine" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnAdd" android:text="@string/add" style="@style/OperatorButton"/>
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btn4" android:text="@string/four" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn5" android:text="@string/five" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn6" android:text="@string/six" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnDot" android:text="@string/dot" style="@style/CalcButton"/>
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btn1" android:text="@string/one" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn2" android:text="@string/two" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn3" android:text="@string/three" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn0" android:text="@string/zero" style="@style/CalcButton"/>
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/EqualButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1"
+            android:text="@string/equal" />
+        
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
