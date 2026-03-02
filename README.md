@@ -37,4 +37,5 @@ implement event handling, design user interfaces using XML, and apply basic arit
 an Android environment.
 
 Author
+
 Virajee Bamunuhendra
