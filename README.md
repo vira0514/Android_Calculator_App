@@ -7,6 +7,7 @@ application allows users to perform basic arithmetic operations through a clean 
 interface.
 
 Features
+
 • Addition
 • Subtraction
 • Multiplication
@@ -15,6 +16,7 @@ Features
 • Simple and responsive user interface
 
 Technologies Used
+
 • Java
 • Android Studio
 • XML Layouts
